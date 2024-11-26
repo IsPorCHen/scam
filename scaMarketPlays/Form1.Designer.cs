@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.userSelect = new System.Windows.Forms.RadioButton();
             this.selectSaleman = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,14 +38,18 @@
             this.loginSaleman = new System.Windows.Forms.TextBox();
             this.login = new System.Windows.Forms.Label();
             this.password = new System.Windows.Forms.Label();
-            this.loginButton = new System.Windows.Forms.Button();
             this.registrationButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // userSelect
             // 
             this.userSelect.AutoSize = true;
-            this.userSelect.Location = new System.Drawing.Point(15, 26);
+            this.userSelect.Location = new System.Drawing.Point(370, 124);
             this.userSelect.Name = "userSelect";
             this.userSelect.Size = new System.Drawing.Size(45, 17);
             this.userSelect.TabIndex = 0;
@@ -56,7 +61,7 @@
             // selectSaleman
             // 
             this.selectSaleman.AutoSize = true;
-            this.selectSaleman.Location = new System.Drawing.Point(15, 49);
+            this.selectSaleman.Location = new System.Drawing.Point(370, 147);
             this.selectSaleman.Name = "selectSaleman";
             this.selectSaleman.Size = new System.Drawing.Size(66, 17);
             this.selectSaleman.TabIndex = 1;
@@ -68,7 +73,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(367, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 2;
@@ -76,36 +81,36 @@
             // 
             // userLogin
             // 
-            this.userLogin.Location = new System.Drawing.Point(234, 26);
+            this.userLogin.Location = new System.Drawing.Point(301, 192);
             this.userLogin.Name = "userLogin";
-            this.userLogin.Size = new System.Drawing.Size(100, 20);
+            this.userLogin.Size = new System.Drawing.Size(200, 20);
             this.userLogin.TabIndex = 3;
             // 
             // userPassword
             // 
-            this.userPassword.Location = new System.Drawing.Point(234, 67);
+            this.userPassword.Location = new System.Drawing.Point(301, 233);
             this.userPassword.Name = "userPassword";
-            this.userPassword.Size = new System.Drawing.Size(100, 20);
+            this.userPassword.Size = new System.Drawing.Size(200, 20);
             this.userPassword.TabIndex = 4;
             // 
             // passwordSaleman
             // 
-            this.passwordSaleman.Location = new System.Drawing.Point(234, 67);
+            this.passwordSaleman.Location = new System.Drawing.Point(301, 233);
             this.passwordSaleman.Name = "passwordSaleman";
-            this.passwordSaleman.Size = new System.Drawing.Size(100, 20);
+            this.passwordSaleman.Size = new System.Drawing.Size(200, 20);
             this.passwordSaleman.TabIndex = 6;
             // 
             // loginSaleman
             // 
-            this.loginSaleman.Location = new System.Drawing.Point(234, 26);
+            this.loginSaleman.Location = new System.Drawing.Point(301, 192);
             this.loginSaleman.Name = "loginSaleman";
-            this.loginSaleman.Size = new System.Drawing.Size(100, 20);
+            this.loginSaleman.Size = new System.Drawing.Size(200, 20);
             this.loginSaleman.TabIndex = 5;
             // 
             // login
             // 
             this.login.AutoSize = true;
-            this.login.Location = new System.Drawing.Point(234, 8);
+            this.login.Location = new System.Drawing.Point(301, 174);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(38, 13);
             this.login.TabIndex = 7;
@@ -114,25 +119,15 @@
             // password
             // 
             this.password.AutoSize = true;
-            this.password.Location = new System.Drawing.Point(231, 51);
+            this.password.Location = new System.Drawing.Point(298, 217);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(45, 13);
             this.password.TabIndex = 8;
             this.password.Text = "Пароль";
             // 
-            // loginButton
-            // 
-            this.loginButton.Location = new System.Drawing.Point(28, 115);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(75, 23);
-            this.loginButton.TabIndex = 9;
-            this.loginButton.Text = "Войти";
-            this.loginButton.UseVisualStyleBackColor = true;
-            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
-            // 
             // registrationButton
             // 
-            this.registrationButton.Location = new System.Drawing.Point(109, 115);
+            this.registrationButton.Location = new System.Drawing.Point(340, 272);
             this.registrationButton.Name = "registrationButton";
             this.registrationButton.Size = new System.Drawing.Size(131, 23);
             this.registrationButton.TabIndex = 10;
@@ -140,13 +135,56 @@
             this.registrationButton.UseVisualStyleBackColor = true;
             this.registrationButton.Click += new System.EventHandler(this.registrationButton_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(298, 256);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Уже есть аккаунт?";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.Location = new System.Drawing.Point(408, 256);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Войти";
+            this.label3.Click += new System.EventHandler(this.loginButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(315, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(156, 92);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(507, 235);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(114, 17);
+            this.checkBox1.TabIndex = 14;
+            this.checkBox1.Text = "Показать пароль";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.registrationButton);
-            this.Controls.Add(this.loginButton);
             this.Controls.Add(this.password);
             this.Controls.Add(this.login);
             this.Controls.Add(this.passwordSaleman);
@@ -158,6 +196,7 @@
             this.Controls.Add(this.userSelect);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,8 +213,11 @@
         private System.Windows.Forms.TextBox loginSaleman;
         private System.Windows.Forms.Label login;
         private System.Windows.Forms.Label password;
-        private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Button registrationButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

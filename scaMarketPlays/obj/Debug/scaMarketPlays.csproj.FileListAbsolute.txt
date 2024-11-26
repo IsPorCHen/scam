@@ -8,3 +8,13 @@ C:\Users\328-7\Downloads\исрпо pr-32 юнусов\scaMarketPlays\bin\Debug\
 C:\Users\328-7\Downloads\исрпо pr-32 юнусов\scaMarketPlays\bin\Debug\scaMarketPlays.pdb
 C:\Users\328-7\Downloads\исрпо pr-32 юнусов\scaMarketPlays\obj\Debug\scaMarketPlays.exe
 C:\Users\328-7\Downloads\исрпо pr-32 юнусов\scaMarketPlays\obj\Debug\scaMarketPlays.pdb
+C:\Users\328-7\Downloads\scam-main\scam-main\scaMarketPlays\bin\Debug\scaMarketPlays.exe.config
+C:\Users\328-7\Downloads\scam-main\scam-main\scaMarketPlays\bin\Debug\scaMarketPlays.exe
+C:\Users\328-7\Downloads\scam-main\scam-main\scaMarketPlays\bin\Debug\scaMarketPlays.pdb
+C:\Users\328-7\Downloads\scam-main\scam-main\scaMarketPlays\obj\Debug\scaMarketPlays.csproj.AssemblyReference.cache
+C:\Users\328-7\Downloads\scam-main\scam-main\scaMarketPlays\obj\Debug\scaMarketPlays.Form1.resources
+C:\Users\328-7\Downloads\scam-main\scam-main\scaMarketPlays\obj\Debug\scaMarketPlays.Properties.Resources.resources
+C:\Users\328-7\Downloads\scam-main\scam-main\scaMarketPlays\obj\Debug\scaMarketPlays.csproj.GenerateResource.cache
+C:\Users\328-7\Downloads\scam-main\scam-main\scaMarketPlays\obj\Debug\scaMarketPlays.csproj.CoreCompileInputs.cache
+C:\Users\328-7\Downloads\scam-main\scam-main\scaMarketPlays\obj\Debug\scaMarketPlays.exe
+C:\Users\328-7\Downloads\scam-main\scam-main\scaMarketPlays\obj\Debug\scaMarketPlays.pdb
