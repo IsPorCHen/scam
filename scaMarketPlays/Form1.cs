@@ -63,7 +63,7 @@ namespace scaMarketPlays
             {
                 if (passwordSaleman.Text != "" && loginSaleman.Text != "")
                 {
-                    if (CorrectPassword(passwordSaleman))
+                    if (CorrectPassword(passwordSaleman, loginSaleman))
                     {
                         string[] fileText = File.ReadAllLines("Saleman Data.txt");
                         int index = Array.FindIndex(fileText, str => str.Contains(loginSaleman.Text));
@@ -75,7 +75,7 @@ namespace scaMarketPlays
 
                             if (passwordSaleman.Text == info[1])
                             {
-                                MessageBox.Show("Авторизация прошла успешно");
+                                OpenSalemanForm();
                             }
                             else
                             {
@@ -96,7 +96,7 @@ namespace scaMarketPlays
             {
                 if (userLogin.Text != "" && userPassword.Text != "")
                 {
-                    if (CorrectPassword(userPassword))
+                    if (CorrectPassword(userPassword, userLogin))
                     {
                         string[] fileText = File.ReadAllLines("User Data.txt");
                         int index = Array.FindIndex(fileText, str => str.Contains(userLogin.Text));
@@ -108,7 +108,7 @@ namespace scaMarketPlays
 
                             if (userPassword.Text == info[1])
                             {
-                                MessageBox.Show("Авторизация прошла успешно");
+                                ////////////////////
                             }
                             else
                             {
@@ -134,7 +134,7 @@ namespace scaMarketPlays
             {
                 if (passwordSaleman.Text != "" && loginSaleman.Text != "")
                 {
-                    if (CorrectPassword(passwordSaleman))
+                    if (CorrectPassword(passwordSaleman, loginSaleman))
                     {
                         string[] fileText = File.ReadAllLines("Saleman Data.txt");
                         int index = Array.FindIndex(fileText, str => str.Contains(loginSaleman.Text));
@@ -146,7 +146,7 @@ namespace scaMarketPlays
                                 wr.WriteLine($"{loginSaleman.Text}:{passwordSaleman.Text}");
                             }
 
-                            MessageBox.Show("Регистрация успешна");
+                            OpenSalemanForm();
                         }
                         else
                         {
@@ -163,7 +163,7 @@ namespace scaMarketPlays
             {
                 if (userLogin.Text != "" && userPassword.Text != "")
                 {
-                    if (CorrectPassword(userPassword))
+                    if (CorrectPassword(userPassword, userLogin))
                     {
                         string[] fileText = File.ReadAllLines("User Data.txt");
                         int index = Array.FindIndex(fileText, str => str.Contains(userLogin.Text));
@@ -175,7 +175,7 @@ namespace scaMarketPlays
                                 wr.WriteLine($"{userLogin.Text}:{userPassword.Text}");
                             }
 
-                            MessageBox.Show("Регистрация успешна");
+                           /////////////////////
                         }
                         else
                         {
@@ -186,17 +186,24 @@ namespace scaMarketPlays
             }
         }
 
-        private bool CorrectPassword(TextBox text)
+        private void OpenSalemanForm()
+        {
+            SalemanForm form = new SalemanForm();
+            this.Hide();
+            form.Show();
+        }
+
+        private bool CorrectPassword(TextBox password, TextBox login)
         {
             char[] specialSymbols = { '!', '№', '@', '%', ';', '?', ':' };
-            bool contains = specialSymbols.Any(text.Text.Contains);
+            bool contains = specialSymbols.Any(password.Text.Contains);
 
-            if (text.Text.Length < 8)
+            if (password.Text.Length < 8)
             {
                 MessageBox.Show("Длина пароля должна быть больше или равно 8");
                 return false;
             }
-            else if (string.IsNullOrWhiteSpace(text.Text))
+            else if (string.IsNullOrWhiteSpace(password.Text))
             {
                 MessageBox.Show("Пароль не должен быть содержать пробел, или не должен быть пустым");
                 return false;
@@ -206,9 +213,14 @@ namespace scaMarketPlays
                 MessageBox.Show("Пароль должен содержать спец сипволы");
                 return false;
             }
-            else if (!text.Text.Any(char.IsUpper) || !text.Text.Any(char.IsLower))
+            else if (!password.Text.Any(char.IsUpper) || !password.Text.Any(char.IsLower))
             {
                 MessageBox.Show("Пароль должен содержать буквы разного ргистра");
+                return false;
+            }
+            else if (password == login)
+            {
+                MessageBox.Show("Пароль не должен быть равен логину");
                 return false;
             }
             else
