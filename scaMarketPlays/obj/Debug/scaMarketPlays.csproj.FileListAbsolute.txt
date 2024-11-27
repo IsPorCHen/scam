@@ -29,3 +29,15 @@ C:\Users\st310-12\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.cspr
 C:\Users\st310-12\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.exe
 C:\Users\st310-12\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.pdb
 C:\Users\st310-12\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.SalemanForm.resources
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.csproj.AssemblyReference.cache
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.addProduct.resources
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.Form1.resources
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.Properties.Resources.resources
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.SalemanForm.resources
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.csproj.GenerateResource.cache
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.csproj.CoreCompileInputs.cache
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.exe
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\obj\Debug\scaMarketPlays.pdb
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\bin\Debug\scaMarketPlays.exe.config
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\bin\Debug\scaMarketPlays.exe
+C:\Users\fazy2\Source\Repos\scam\scaMarketPlays\bin\Debug\scaMarketPlays.pdb
