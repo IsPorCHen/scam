@@ -108,7 +108,7 @@ namespace scaMarketPlays
 
                             if (userPassword.Text == info[1])
                             {
-                                ////////////////////
+                                OpenBuyer();
                             }
                             else
                             {
@@ -175,7 +175,7 @@ namespace scaMarketPlays
                                 wr.WriteLine($"{userLogin.Text}:{userPassword.Text}");
                             }
 
-                           /////////////////////
+                            OpenBuyer();
                         }
                         else
                         {
@@ -193,6 +193,12 @@ namespace scaMarketPlays
             form.Show();
         }
 
+        private void OpenBuyer()
+        {
+            buyer b = new buyer();
+            this.Hide();
+            b.Show();
+        }
         private bool CorrectPassword(TextBox password, TextBox login)
         {
             char[] specialSymbols = { '!', '№', '@', '%', ';', '?', ':' };
